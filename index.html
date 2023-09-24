@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>IDENTIFICTION</title>
+        <link rel = "icon" href="https://i.etsystatic.com/10313448/r/il/ac2efd/3176501141/il_fullxfull.3176501141_tomi.jpg" type = "image/x-icon">
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <center>
+        <h1 id = "hbutt1">IMAGE IDENTIFICTION</h1>
+        <br>
+        <h3>MODEL IS NOT TRAINED TO IDENTIFICTION THE FOLLOWING OBJECTS</h3>
+        <br>
+        <hr>
+        <h4>paper</h4>
+        <br>
+        <h4>tea cup</h4>
+        <br>
+        <h4>pen</h4>
+        <br>
+        <h4>small bag</h4>
+        <br>
+        <h4>keys</h4>
+        <br>
+        <hr>
+        <h4>webcam perspective</h4>
+        <div id = "dbutt1"></div>
+        <br>
+        <div id = "dbutt2"></div>
+        <br>
+        <hr>
+        <button id = "butt1" onclick="snapshot()">CAPTURE IMAGE</button>
+        <br>
+        <br>
+        <button id ="butt2" onclick = "check()">IDENTIFICTION IMAGE</button>
+        <h3>0BJECT:<span id = "sbutt1"></span></h3>
+        <h3>ACCRACY:<span id = "sbutt2"></span></h3>
+        </center>
+        <script src="main.js"></script>
+    </body>
+</html>
